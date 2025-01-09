@@ -108,8 +108,15 @@ header {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
-
 }
+.image {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+.image.show {
+    opacity: 1;
+}
+
 header::after {
         content: '';
         position: absolute;
@@ -230,7 +237,8 @@ h2, h3, h4 {
     /* Transition fluide */
 }
 
- 
+
+
 h2.show, h3.show, h4.show, footer h2, footer h3, footer h4, .carousel-container h2
 {
     /* Classe ajoutée par JavaScript */
@@ -239,6 +247,7 @@ h2.show, h3.show, h4.show, footer h2, footer h3, footer h4, .carousel-container 
     transform: translateY(0);
     /* Ramène en position */
 }
+
 
 
 

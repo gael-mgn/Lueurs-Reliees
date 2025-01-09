@@ -1,6 +1,6 @@
 // script.js
 document.addEventListener("DOMContentLoaded", () => {
-    const ratings = document.querySelectorAll('h2, h3, h4');
+    const ratings = document.querySelectorAll('h2, h3, h4, .image');
 
     // Crée un observateur
     const observer = new IntersectionObserver((entries) => {
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }, {
-        threshold: 0.9 // Déclenche lorsque 50% de l'élément est visible
+        threshold: 0.5 // Déclenche lorsque 50% de l'élément est visible
     });
 
     // Applique l'observateur à chaque élément avec la classe .rating
