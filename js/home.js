@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (window.innerWidth <= 768){
          const amnesty = document.getElementById("amnesty");
-        amnesty.src = 'img/amnesty-mobile.png';
+         //amnesty.src = 'img/amnesty-mobile.png';
     }
 
 	let currentImageIndex = 0;
