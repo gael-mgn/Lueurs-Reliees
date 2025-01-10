@@ -37,12 +37,13 @@ article h3 {
     font-size: 30px;
 }
 }
+/*
 article img {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
 
-}
+}*/
 .article-item img {
     margin-top: 0;
     margin-bottom: 0;
