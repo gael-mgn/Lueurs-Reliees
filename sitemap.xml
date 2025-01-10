@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://lueurs-reliees.fr/</loc>
+  <lastmod>2025-01-09T21:13:05+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://lueurs-reliees.fr/articles/nos%20publications/nos%20publications.html</loc>
+  <lastmod>2025-01-09T21:13:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lueurs-reliees.fr/articles/soumettre%20un%20manuscrit/soumettre%20un%20manuscrit.html</loc>
+  <lastmod>2025-01-09T21:13:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lueurs-reliees.fr/articles/rejoignez%20les%20%C3%A9ditions%20des%20lueurs%20reli%C3%A9es/rejoignez%20les%20%C3%A9ditions%20des%20lueurs%20reli%C3%A9es.html</loc>
+  <lastmod>2025-01-09T21:13:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lueurs-reliees.fr/articles/les%20%C3%A9ditions%20des%20lueurs%20reli%C3%A9es%20soutiennent%20amnesty%20international/les%20%C3%A9ditions%20des%20lueurs%20reli%C3%A9es%20soutiennent%20amnesty%20international.html</loc>
+  <lastmod>2025-01-09T21:13:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lueurs-reliees.fr/index.html</loc>
+  <lastmod>2025-01-09T21:13:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
