@@ -414,7 +414,7 @@ position: absolute;
 .quotation, .text {
     margin: 20vw;
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 .quotation {
     font-size: 46px;
