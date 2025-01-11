@@ -18,6 +18,12 @@ body {
     p {
         text-align: justify;  /* Justifie le texte uniquement sur les grands écrans */
     }
+    ul li p {
+        text-align: left;
+    }
+    .no-style p {
+        text-align: justify;
+    }
 }
 a {
   text-decoration: none;
@@ -714,7 +720,9 @@ footer {
         top: 15px;
     }
 }
-
+.footer-bottom h2 {
+    font-weight: normal;
+}
 .footer-bottom .text-container {
     margin-top: 20px;
 }

@@ -110,3 +110,38 @@ article h4 {
   border-top: 1px solid #ddd;
   padding-top: 15px;
 }
+
+
+
+
+
+.letter-container {
+
+    font-family: 'Georgia', serif;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #d4cbb1;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.letter-header, .letter-footer {
+  text-align: right;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.letter-header p {
+  margin: 5px 0;
+}
+
+.letter-body p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.letter-footer p {
+  margin: 5px 0;
+}
