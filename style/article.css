@@ -126,6 +126,11 @@ article h4 {
   padding: 30px;
   border-radius: 8px;
 }
+@media screen and (max-width: 767px) {
+    .letter-container {
+        padding: 15px;
+    }
+}
 
 .letter-header, .letter-footer {
   text-align: right;

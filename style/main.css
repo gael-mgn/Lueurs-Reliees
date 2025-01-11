@@ -80,9 +80,7 @@ footer h3 {
 main a {
     text-decoration: underline;
 }
-.more {
-    padding-top: 20px;
-}
+
 .button {
     font-size: 18px;
     padding: 10px 15px;
@@ -419,23 +417,20 @@ position: absolute;
 
 
 
-.quotation, .text {
+.text {
     margin: 20vw;
     margin-top: 0px;
     margin-bottom: 0px;
-}
-.quotation {
-    font-size: 46px;
 }
 .text {
     padding-bottom: 32px;
 }
 
 @media screen and (max-width: 768px) {
-    .quotation, h2, .overlay-content {
+    h2, .overlay-content {
     font-size: 28px;
 }
-.quotation, .text {
+.text {
     margin: 5vw;
 }
 }
