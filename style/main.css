@@ -340,7 +340,7 @@ position: absolute;
         margin-left: 10vw;
     }
     .menu a {
-        font-size: 12px;
+        font-size: 15px;
     }
     .menu.show {
         display: flex; /* Afficher le menu lorsque la classe .show est ajoutée */
