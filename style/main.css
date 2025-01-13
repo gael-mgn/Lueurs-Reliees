@@ -1,4 +1,14 @@
+/* Changer la couleur de la sélection */
+::selection {
+  background-color: #FFDD00; /* Couleur de fond */
+  color: white; /* Couleur du texte */
+}
 
+/* Pour les navigateurs WebKit (Chrome, Safari, etc.) */
+::-webkit-selection {
+  background-color: #FFDD00;
+  color: white;
+}
 
 
 .indentation {
