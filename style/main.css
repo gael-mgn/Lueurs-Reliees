@@ -266,9 +266,20 @@ h2.show, h3.show, h4.show, footer h2, footer h3, footer h4, .carousel-container 
 
 
 
-
-
-
+@media (min-width: 1024px) {
+.more {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+     display: inline-block; /* Nécessaire pour appliquer les bordures correctement */
+    padding: 10px 20px; /* Ajuste le remplissage à tes besoins */
+    border: 3px solid #000; /* Définit la bordure */
+    border-radius: 25px; /* Arrondi les coins */
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    color: #000; /* Définit la couleur du texte */
+}
+}
 
 main {
     margin: 0px;
