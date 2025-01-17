@@ -279,6 +279,9 @@ h2.show, h3.show, h4.show, footer h2, footer h3, footer h4, .carousel-container 
     text-decoration: none; /* Supprime le soulignement par défaut */
     color: #000; /* Définit la couleur du texte */
 }
+.more:hover{
+    text-decoration: underline;
+}
 }
 
 main {
