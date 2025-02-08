@@ -404,12 +404,16 @@ position: absolute;
     transition: left 0.5s;
     font-size: 23px;
     height: 100%;
-    width: 100%;
-    max-width: 700px;
+    width: 65%;
     overflow: hidden;
     opacity: 1; /*rend le carrousel plus esthétique*/
     z-index: 2;
     color: #ddd;
+}
+@media screen and (max-width: 768px) {
+    .article-infos {
+        width: 100%;
+    }
 }
 .article-infos h2, .article-infos p, .article-infos a {
     margin-left: 20vw;
