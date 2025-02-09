@@ -22,6 +22,7 @@ body {
     margin: 0;
     font-family: 'EB Garamond', serif;
     font-size: 24px;
+    background-color: #F4F4F4;
 }
 
 @media (min-width: 1200px) {
@@ -433,7 +434,7 @@ position: absolute;
 
 .articles {
 
-      background-color: #F4F4F4;
+
       color: black;
     overflow: hidden;
 }
@@ -518,7 +519,7 @@ position: absolute;
     text-align: left;
     overflow: hidden;
     transition: transform 0.3s ease;
-
+    background-color: white;
     text-decoration: none;
     color: inherit;
 }
