@@ -514,7 +514,6 @@ position: absolute;
     /*border: 1px solid #666;*/
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    width: calc(100% - 40px); /* Full width with margins */
     display: flex;
     text-align: left;
     overflow: hidden;
