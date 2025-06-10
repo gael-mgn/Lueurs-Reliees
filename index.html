@@ -1,399 +1,307 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="style/styles.css">
-    <link rel="icon" href="https://lueurs-reliees.fr/img/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Éditions des Lueurs Reliées – Maison d'Édition Engagée</title>
 
-    <meta name="description" content="Les Éditions des Lueurs Reliées, une maison d’édition à but non lucratif, ont été créées pour offrir aux auteurs une plateforme de publication solidaire.">
-    <meta name="keywords" content="édition, Lueurs Reliées, publication, livre, maison d'édition">
-    <meta name="author" content="Gaël Maignan">
-    <meta name="robots" content="index, follow">
 
-    <meta property="og:title" content="Éditions des Lueurs Reliées — Maison d'Edition Engagée">
-    <meta property="og:description" content="Les Éditions des Lueurs Reliées sont une maison d’édition associative et non lucrative qui réinvente la littérature au service de la pédagogie et de l’engagement. Nous rééditons des classiques enrichis de contenus éducatifs et collaborons avec enseignants et élèves pour favoriser l’apprentissage. Notre mission : relier les voix, révéler les histoires et éclairer les parcours. Découvrez une maison d’édition alliant culture, éducation et solidarité.">
-    <meta property="og:image" content="https://lueurs-reliees.fr/img/cover.png">
-    <meta property="og:url" content="https://lueurs-reliees.fr">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
+  <meta name="author" content="Gaël Maignan">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="Lueurs Reliées, Édition, Livre, Indépendant">
+  <meta name="description" content="Les Éditions des Lueurs Reliées est une maison d’édition fondée avec une mission claire : offrir aux auteur·e·s une plateforme de publication solidaire. Portés par une vision d’une littérature inclusive, accessible et porteuse de valeurs.">
+  <meta property="og:image" content="img/banner.webp">
 
-    <script src="js/script.js"></script>
-    <script src="js/home.js"></script>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicon-32.png" type="image/png">
+  <link rel="icon" sizes="96x96" href="img/favicon-96.png" type="image/png">
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "image": "https://lueurs-reliees.fr/img/cover.png",
-      "url": "https://lueurs-reliees.fr/",
-      "sameAs": ["https://www.linkedin.com/company/editions-lueurs-reliees"],
-      "logo": "https://lueurs-reliees.fr/img/logo.png",
-      "name": "Éditions des Lueurs Reliées",
-      "description": "Les Éditions des Lueurs Reliées sont une maison d’édition associative et non lucrative qui réinvente la littérature au service de la pédagogie et de l’engagement. Nous rééditons des classiques enrichis de contenus éducatifs et collaborons avec enseignants et élèves pour favoriser l’apprentissage. Notre mission : relier les voix, révéler les histoires et éclairer les parcours. Découvrez une maison d’édition alliant culture, éducation et solidarité.",
-      "email": "contact@lueurs-reliees.fr",
-      "telephone": "+33-06-74-41-36-37",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Rue Petit 5",
-        "addressLocality": "Paris",
-        "addressCountry": "FR",
-        "addressRegion": "Ile-de-France",
-        "postalCode": "75019"
-      }
-    }
-    </script>
 
-    <title>Lueurs Reliées — Maison d'Édition Engagée</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/mosaic.css">
+
+  <script type="text/javascript" src="js/reveal.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="js/delaunator.min.js"></script>
+  <script type="text/javascript" src="js/triangles.js"></script>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="main-header">
-        <h1><a class="title" href="#">Éditions des Lueurs Reliées</a></h1>
-        <nav class="main-nav">
-        <div class="menu-icon">&#9776;</div>
-        <ul class="menu">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="articles/nos publications/nos publications.html">Nos publications</a></li>
-            <li><a href="articles/soumettre un manuscrit/soumettre un manuscrit.html">Soumettre un manuscrit</a></li>
-            <li><a href="articles/rejoignez les éditions des lueurs reliées/rejoignez les éditions des lueurs reliées.html">Nous rejoindre</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+  <header>
+
+    <div class="navbar" id="navbar">
+    <a href="#" class="title">
+      <h1>Éditions des Lueurs Reliées</h1>
+    </a>
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#">Accueil</a>
+      <a href="articles/about/about.html">À propos</a>
+      <a href="articles/catalogue/catalogue.html">Catalogue</a>
+      <a href="articles/contact/contact.html">Contact</a>
     </nav>
-    </header>
-
-    <main>
-
-
-        <div class="carousel-container">
-            <img src="" class="carousel-image" id="currentImage" alt=""/>
-            <img src="" class="carousel-image2" id="lastImage" alt=""/>
-
-            <div id="article_infos" class="article-infos">
-                <h2 id="article_title"></h2>
-                <p id="article_resume"></p>
-                <a id="article_link" class="button" href="">Découvrir</a>
-            </div>
-        </div>
-
-
-
-
-
-        <div class="text">
-        <h2>Les Éditions des Lueurs Reliées</h2>
-
-<!--
-        <blockquote>    
-            <p>“”</p>
-        </blockquote>-->
-
-        <p>Les Éditions des Lueurs Reliées est une maison d’édition fondée avec une mission claire : offrir aux auteur·e·s une plateforme de publication solidaire. Portés par une vision d’une littérature inclusive, accessible et porteuse de valeurs.</p>
-
-        <p>Notre structure se distingue par ses deux pôles complémentaires, chacun dédié à un aspect unique de notre mission : <span class="bold">l’enseignement, la culture, et la publication d’œuvres originales</span>. Ensemble, ils façonnent une maison d’édition où créativité, pédagogie et solidarité se rencontrent.</p>
-
-        
-        </div>
-
-        <div class="text">
-            <div class="article-grid">
-                <h2>À la Une</h2>
-                <!--<a href="articles/les éditions des lueurs reliées soutiennent amnesty international/les éditions des lueurs reliées soutiennent amnesty international.html" class="article-item" style="display: none;">
-                  <img src="img/amnesty.png" id="amnesty">
-                  <div class="article-info">
-                    <h3 class="article-title">Publier pour défendre la liberté d'expression</h3>
-                    <p class="article-description">Les Éditions des Lueurs Reliées ont été fondées sur une ambition claire : mettre la littérature au service de causes qui comptent. Pour l’année 2025-2026, nous soutiendrons Amnesty International.</p>
-                  </div>
-                </a>-->
-                <a href="presse/migrassion/migrassion.html" class="article-item">
-                  <div class="article-info">
-                    <h3 class="article-title"><span class="italic">Migrassion</span> — Un recueil poétique anonyme, entre exil et langue</h3>
-                    <p class="article-description">Un migrant arrivé en France il y a cinq ans publie son premier recueil de poésie.<br>Un ouvrage brut, pudique et bouleversant, écrit dans une langue qu’il s’approprie à chaque mot. Pour des raisons de sécurité, l’auteur reste anonyme. Ce sont ses poèmes qui parleront pour lui.</p>
-                  </div>
-                </a>
-                <a href="articles/réédition de flatland quand littérature et mathématiques se rencontrent/réédition de flatland quand littérature et mathématiques se rencontrent.html" class="article-item">
-                  <img src="img/flatland.png" alt="">
-                  <div class="article-info">
-                    <h3 class="article-title">Réédition de <span class="italic">Flatland</span> : Une aventure interdisciplinaire</h3>
-                    <p class="article-description">Nous collaborons avec des professeurs de mathématiques et d’histoire-géographie pour proposer une édition enrichie de ce classique des Mathématiques !</p>
-                  </div>
-                </a>
-                <a href="articles/correspondances imaginaires que les grands esprits se rencontrent/correspondances imaginaires que les grands esprits se rencontrent.html" class="article-item">
-                  <img src="img/lettre.png" alt="illustration d'une lettre représentant une correspondance">
-                  <div class="article-info">
-                    <h3 class="article-title">Correspondances Imaginaires : Que les grands esprits se rencontrent !</h3>
-                    <p class="article-description">Ce projet collaboratif invite élèves, enseignants et passionnés de littérature à imaginer des échanges épistolaires inédits entre des figures emblématiques de la littérature !</p>
-                  </div>
-                </a>
-                <a href="articles/collaboration avec le corps enseignant/collaboration avec le corps enseignant.html" class="article-item">
-                  <img src="img/publions ensemble.png" alt="">
-                  <div class="article-info">
-                    <h3 class="article-title">Vous êtes Enseignant·e ?</h3>
-                    <p class="article-description">Explorez l'Espace Enseignant, cet espace est spécialement dédié au corps enseignant, pour vous informer sur nos projets en cours, vous inviter à participer à nos initiatives, et réfléchir ensemble à des moyens innovants pour inclure la littérature dans vos pratiques pédagogiques.</p>
-                  </div>
-                </a>
-                <!--
-                <a href="articles/rejoignez les éditions des lueurs reliées/rejoignez les éditions des lueurs reliées.html" class="article-item">
-                  <img src="img/img.png" alt="">
-                  <div class="article-info">
-                    <h3 class="article-title">Vous êtes Enseignant·e ?</h3>
-                    <p class="article-description">Explorez l'Espace Enseignant, cet espace est spécialement dédié au corps enseignant, pour vous informer sur nos projets en cours, vous inviter à participer à nos initiatives, et réfléchir ensemble à des moyens innovants pour inclure la littérature dans vos pratiques pédagogiques..</p>
-                  </div>
-                </a>
-                <a href="articles/rejoignez les éditions des lueurs reliées/rejoignez les éditions des lueurs reliées.html" class="article-item">
-                  <img src="img/img.png" alt="">
-                  <div class="article-info">
-                    <h3 class="article-title">Rejoignez les Éditions des Lueurs Reliées</h3>
-                    <p class="article-description">Les Éditions des Lueurs Reliées ouvrent leurs portes à toutes celles et ceux qui souhaitent contribuer à un projet unique, centré sur la liberté d’expression et le partage d’écrits engagés.</p>
-                  </div>
-                </a>
-                <a href="articles/rejoignez les éditions des lueurs reliées/rejoignez les éditions des lueurs reliées.html" class="article-item">
-                  <img src="img/img.png" alt="">
-                  <div class="article-info">
-                    <h3 class="article-title">Vous souhaitez être publié·e ?</h3>
-                    <p class="article-description">Nous acceptons des manuscrits d’étudiant·e·s et d’écrivain·e·s en quête d’une première publication. Chaque soumission est étudiée avec soin pour révéler des talents méconnus.</p>
-                  </div>
-                </a>-->
-              </div>
-        </div>
-
-
-        <div class="text">
-            <!--<a href="articles/collaboration avec le corps enseignant/collaboration avec le corps enseignant.html"><img class="image" src="img/publions ensemble.png" alt=""></a>-->
-            <h2>Nos pôles éditoriaux : Éveiller, valoriser, et créer</h2>
-
-            <p>La ligne éditoriale des Éditions des Lueurs Reliées peut se définir comme une démarche pédagogique, inclusive, et engagée, ancrée dans la transmission culturelle et l’impact social. Ainsi, nous nous engageons à transformer la relation entre les jeunes et la littérature grâce à deux pôles distincts.</p>
-
-            <h3>Pôle Enseignement : Réinventer les classiques avec un regard jeune</h3>
-
-            <p>Nos rééditions enrichies d’œuvres classiques sont pensées pour inclure les jeunes générations dans une démarche à la fois éditoriale et pédagogique. Chaque ouvrage s’accompagne de préfaces collaboratives rédigées par des élèves et des étudiants, apportant un regard moderne sur des textes intemporels. En collaboration avec des enseignants, nous intégrons également des supports éducatifs, tels que des activités de réflexion ou des projets interdisciplinaires, favorisant une appropriation active des œuvres.</p>
-
-
-            <!--<a class="more" href="articles/collaboration avec le corps enseignant/collaboration avec le corps enseignant.html">En savoir plus sur notre collaboration avec les enseignants</a>-->
-
-            <a href="articles/collaboration avec le corps enseignant/collaboration avec le corps enseignant.html" class="article-item">
-                <img src="img/publions ensemble.png" alt="">
-                <div class="article-info">
-                  <h3 class="article-title">Vous êtes Enseignant·e ?</h3>
-                  <p class="article-description">Explorez l'Espace Enseignant, cet espace est spécialement dédié au corps enseignant, pour vous informer sur nos projets en cours, vous inviter à participer à nos initiatives, et réfléchir ensemble à des moyens innovants pour inclure la littérature dans vos pratiques pédagogiques.</p>
-                </div>
-            </a>
-
-            <br><br>
-
-
-            <!--
-            <h3>Pôle Culturel et Évènementiel : Valoriser l’éphémère</h3>
-
-            <p>Certaines initiatives culturelles et collaboratives méritent d’être documentées et mises en valeur. Ce pôle se consacre à la publication de livres autour d’événements culturels, tels que des performances, des collaborations artistiques ou des projets éphémères, afin d’en préserver la mémoire. Ces ouvrages, conçus sur mesure et en éditions limitées, s’adressent souvent à des musées ou à des institutions culturelles et témoignent de projets uniques. Grâce à une approche flexible et personnalisée, chaque livre est pensé pour refléter fidèlement la singularité de l’événement ou du lieu culturel qu’il met à l’honneur.</p>
-
-
-            <a href="articles/un pôle dédié à la culture et à l’événementiel valoriser les projets collaboratifs à travers l’édition/pole culturel.html" class="article-item">
-                <img src="img/img.png" alt="">
-                <div class="article-info">
-                  <h3 class="article-title">Valorisons l’éphémère !</h3>
-                  <p class="article-description">Certaines initiatives culturelles et collaboratives méritent d’être documentées et mises en valeur, alors publions les !</p>
-                </div>
-            </a>
-
-            <br><br>-->
-
-            <h3>Pôle Créations Littéraires : Éclairer les nouvelles voix</h3>
-
-            <p>En parallèle de ce projet à vocation éducative, notre maison d'édition se veut un espace où créativité et réflexion critique s'expriment pleinement. Nous avons à cœur de mettre en lumière de jeunes talents en offrant une plateforme tout particulièrement aux primo-auteur·e·s, qu'ils soient étudiants ou jeunes écrivains, afin qu'ils puissent partager leurs écrits.</p>
-            <p>Nous souhaitons publier des œuvres portées par des auteur·e·s engagé·e·s, désireux de défendre les causes qui leur tiennent à cœur, tant à travers leurs créations littéraires que par le fonctionnement même de notre structure. Notez alors que notre ligne éditoriale ne suit pas une logique de pure rentabilité, ce qui nous permet de placer l’expérimentation littéraire au cœur de notre projet, une valeur essentielle à nos yeux.</p>
-
-            <!--<a class="more" href="articles/soumettre un manuscrit/soumettre un manuscrit.html">En savoir plus sur la soumission de manuscrits</a>-->
-            <a href="articles/soumettre%20un%20manuscrit/soumettre%20un%20manuscrit.html" class="article-item">
-                <img src="img/lettre.png" alt="">
-                <div class="article-info">
-                  <h3 class="article-title">Soumettre un manuscrit</h3>
-                  <p class="article-description">Vous avez un message à partager, une cause qui vous tient à cœur, et vous souhaitez le faire à travers votre plume ? Les Éditions des Lueurs Reliées vous invitent à soumettre votre manuscrit pour une éventuelle publication.</p>
-                </div>
-            </a>
-        </div>
-
-
-
-        <div class="text">
-        <h2>Un modèle éditorial engagé</h2>
-
-        <p>Notre maison d’édition est née pour transformer la littérature en un outil de transmission, d’éducation, et d’engagement. Elle offre une plateforme unique à des auteur·e·s désireux de mettre leurs écrits au service de causes essentielles. Portée par des étudiant·e·s passionné·e·s, elle constitue également un espace d’apprentissage et d’exploration pour les jeunes générations, en particulier pour les étudiant·e·s et primo-auteur·e·s, leur permettant de découvrir le monde de l’édition dans un cadre bienveillant et pédagogique.</p>
-
-        <h3 id="ventes">Le fonctionnement des Éditions des Lueurs Reliées</h3>
-
-        <p>Conformément aux principes de la loi de 1901, notre maison d’édition adopte un modèle de gestion transparent, équitable, et orienté vers l’impact éducatif et social. Voici comment les fonds générés par la vente de chaque livre sont répartis :</p>
-
-
-         <ul class="no-style">
-            <li><p><span class="bold">Soutien à l’auteur·e</span> : 1 € par vente peut être reversé à l’auteur·e, s’il ou elle en fait la demande, en reconnaissance symbolique de son travail.</p></li>
-            <p>Le reste des bénéfices est réparti ainsi :</p>
-            <li><p><span class="bold">Bénéfices solidaires (50%)</span> : Cette part des bénéfices est intégralement reversée à une association affiliée à l’ouvrage, choisie conjointement par l’auteur·e et la maison d’édition avant la publication.</p></li>
-            <li><p><span class="bold">Frais de fonctionnement</span> : L'autre moitié est dédiée à la diffusion des ouvrages ainsi qu’au financement des futures publications.</p></li>
-        </ul>
-
-        <p>Ce modèle vise à valoriser le travail des auteur·e·s tout en mettant la littérature au service d’actions concrètes et solidaires.</p>
-
-        <!--
-        <h3>2025 : Publier pour défendre la liberté d'expression</h3>
-
-        <div class="container">
-            <div class="box"> </div>
-            <div class="box">
-            </div>
-        </div>
-        <a href="articles/les éditions des lueurs reliées soutiennent amnesty international/les éditions des lueurs reliées soutiennent amnesty international.html"><img class="image" src="img/amnesty.png" alt=""></a>
-        <p>Pour l’année 2025-2026, les Éditions des Lueurs Reliées s’engagent à soutenir Amnesty International à travers leurs publications. En choisissant de reverser nos bénéfices à cette organisation, nous affirmons notre conviction que la littérature peut jouer un rôle actif dans la défense des droits humains, notamment en favorisant la liberté d’expression.</p>
-
-        <blockquote>En 2025, Publions en faveur de la Liberté d'Expression !</blockquote>
-        -->
-
-        <p>Chaque livre publié devient ainsi un vecteur de solidarité, permettant à nos auteur·e·s et lecteur·rice·s de contribuer à une cause universelle tout en s’engageant dans un projet littéraire porteur de sens.</p>
-
-
-        <!--
-        <a href="articles/les éditions des lueurs reliées soutiennent amnesty international/les éditions des lueurs reliées soutiennent amnesty international.html" class="article-item">
-                  <img src="img/amnesty.png" id="amnesty">
-                  <div class="article-info">
-                    <h3 class="article-title">Publier pour défendre la liberté d'expression</h3>
-                    <p class="article-description">Les Éditions des Lueurs Reliées ont été fondées sur une ambition claire : mettre la littérature au service de causes qui comptent. Pour l’année 2025-2026, nous soutiendrons Amnesty International.</p>
-                  </div>
-        </a>-->
-
-        </div>
-
-
-        <div class="text">
-        <h2>Un tremplin pour les auteur·e·s, une lueur pour la solidarité</h2>
-
-        <p>Créées par des étudiant·e·s passionné·e·s, les Éditions des Lueurs Reliées sont nées d’un constat : publier un livre reste un défi pour de nombreux jeunes auteur·e·s. Entre les barrières financières, les critères parfois élitistes de l’édition traditionnelle, et le manque d’accès à des opportunités, de nombreuses voix talentueuses peinent à émerger.</p>
-        <p>Notre nom reflète cette vision : relier des voix, révéler des histoires, éclairer des parcours, et offrir un espace de liberté pour des récits qui inspirent, enseignent, et engagent.</p>
-
-        </div>
-
-
-        <div class="text" id="contact">
-
-
-        <h2>Contactez-nous !</h2>
-
-        <p>Une question, une envie de rejoindre l’aventure ou un projet à partager ? Nous serions ravis d’échanger avec vous ! Que vous soyez auteur·e, enseignant·e, étudiant·e ou simplement curieux, n’hésitez pas à nous contacter à l'adresse <a href="mailto:contact@lueurs-reliees.fr">contact@lueurs-reliees.fr</a> pour que nous puissions échanger.</p>
-
-        <br>
-
-        <h2>Notre équipe</h2>
-
-
-         <div class="badge-container">
-    <div class="badge">
-      <img src="img/profile4.png" alt="Photo de profil">
-      <a href="#"><h3>Jeanne Lefevre</h3></a>
-      <h4>Directrice Éditoriale</h4>
-      <p>M2 mention Lettres Modernes à Sorbonne-Université</p>
-      <a href="mailto:jeanne.lefevre@lueurs-reliees.fr">jeanne.lefevre@lueurs-reliees.fr</a>
     </div>
 
-    <div class="badge">
-      <img src="img/maud.jpg" alt="Photo de profil">
-      <a href="#"><h3>Maud Boullé</h3></a>
-      <h4>Relectrice/Correctrice Éditoriale</h4>
-      <p>Étudiante en Lettres Modernes à l'Université Jean Moulin Lyon-III</p>
-      <a href="mailto:maud.boulle@lueurs-reliees.fr">maud.boulle@lueurs-reliees.fr</a>
+    <style>
+      .hero {
+        background-image: url('img/logo.png');
+      }
+    </style>
+
+    <div class="hero" id="hero">
+      <h2 class="reveal">Éditions des Lueurs Reliées</h2>
+      <p>Relier les plumes, éclairer les consciences.</p>
+      <a href="articles/catalogue/catalogue.html" class="btn">Voir le catalogue</a>
+    </div>
+  </header>
+
+  <main>
+  <style>
+    .container {
+      background-color: #374C47;
+    }
+  </style>
+  <div class="container" data-color="#374C47" border-color="#F2E8D7">
+    <svg class="triangle-background" xmlns="http://www.w3.org/2000/svg"></svg>
+    <div class="overlay"></div> <!-- Filtre sombre -->
+    <div class="content">
+      <h2>Éditions des Lueurs Reliées</h2>
+      <p>Les Éditions des Lueurs Reliées est une maison d’édition fondée avec une mission claire : offrir aux auteur·e·s une plateforme de publication solidaire. Portés par une vision d’une littérature inclusive, accessible et porteuse de valeurs.</p>
+    </div>
+  </div>
+
+
+
+  <section id="apropos">
+   
+     <h3 class="reveal">À la Une</h3>
+
+
+     <div class="film">
+      <img src="img/migrassion.png" alt="Affiche du film">
+      <div class="film-info">
+        <h4 class="reveal"><span class="italic">Migrassion</span> — Un recueil poétique anonyme, entre exil et langue</h4>
+        <p>Poésie | Parution prévue pour septembre 2025</p>
+        <p class="italic">ça dit pas comme je veux mais je dis quand même.</p>
+        <a href="articles/books/migrassion.html" class="btn">En savoir plus</a>
+      </div>
     </div>
 
-    <div class="badge">
-      <img src="img/melvia.png" alt="Photo de profil">
-      <a href="#"><h3>Melvia Petit</h3></a>
-      <h4>Correctrice Éditoriale</h4>
-      <p>Étudiante à l'École des Ingénieurs de la Ville de Paris</p>
-      <a href="mailto:melvia.petit@lueurs-reliees.fr">melvia.petit@lueurs-reliees.fr</a>
+    <!--
+    <div class="film">
+      <img src="img/flatland.png" alt="Affiche du film">
+      <div class="film-info">
+        <h4 class="reveal"><span class="italic">Migrassion</span> — Un recueil poétique anonyme, entre exil et langue</h4>
+        <p>Poésie | Parution prévue pour septembre 2025</p>
+        <p class="italic">ça dit pas comme je veux mais je dis quand même.</p>
+        <a href="articles/books/migrassion.html" class="btn">En savoir plus</a>
+      </div>
+    </div>-->
+
+
+
+  </section>
+
+  <style type="text/css">
+    #container2{
+      background-color: #994129;
+    }
+  </style>
+
+  <div class="container" id="container2" data-color="#994129" border-color="#F2E8D7">
+    <svg class="triangle-background" xmlns="http://www.w3.org/2000/svg"></svg>
+    <div class="overlay"></div> <!-- Filtre sombre -->
+    <div class="content">
+      <h2>Soumettre un Manuscrit</h2>
+      <p>Vous avez un message à partager, une cause qui vous tient à cœur, et vous souhaitez le faire à travers votre plume ? Les Éditions des Lueurs Reliées vous invitent à soumettre votre manuscrit pour une éventuelle publication.</p>
+    <a href="articles/submit/submit.html" class="btn">Soumettre un Manuscrit</a>
+    </div>
+  </div>
+
+
+
+<section>
+
+      <h3 class="reveal">À Paraître</h3>
+
+    <p>Découvrez en avant-première les prochaines publications des <span class="italic">Éditions des Leurs Reliées</span>. Voix singulières, écritures audacieuses, regards neufs : nos ouvrages à venir prolongent notre engagement pour une littérature libre, sensible et engagée. Restez à l’écoute, les mots arrivent.</p>
+
+
+      <div class="film">
+      <img src="img/migrassion.png" alt="Affiche du film">
+      <div class="film-info">
+        <h4 class="reveal"><span class="italic">Migrassion</span> — Un recueil poétique anonyme, entre exil et langue</h4>
+        <p>Poésie | Parution prévue pour septembre 2025</p>
+        <p class="italic">ça dit pas comme je veux mais je dis quand même.</p>
+        <a href="articles/books/migrassion.html" class="btn">En savoir plus</a>
+      </div>
     </div>
 
-    <div class="badge">
-      <img src="img/profile2.png" alt="Photo de profil">
-      <a href="#"><h3>Lucie Terrette</h3></a>
-      <h4>Responsable Juridique</h4>
-      <p>Ancienne étudiante en M2 mention Droit des Affaires à Assas</p>
-      <a href="mailto:lucie.terrette@lueurs-reliees.fr">lucie.terrette@lueurs-reliees.fr</a>
+
+    <h3 class="reveal">Catalogue</h3>
+
+    <p>Parcourez notre catalogue et plongez dans l’univers des <span class="italic">Lueurs Reliées</span>. Chaque ouvrage est une rencontre : entre une voix et un lecteur. Romans, essais, poésie – notre sélection reflète une ligne éditoriale portée par le désir de faire résonner des écritures vivantes et novatrices.</p>
+
+    <a href="articles/catalogue/catalogue.html" class="btn">Découvrir notre catalogue</a>
+
+</section>
+
+
+
+
+
+
+  <section class="mosaic-section" id="mosaic-section">
+    <div class="grid" id="grid"></div>
+    <div class="overlay"></div> <!-- Filtre sombre -->
+    <div class="content">
+      <h3 class="reveal">Rejoignez les <span class="italic">Éditions des Lueurs Reliées</span> : Participez à un projet littéraire engagé !</h3>
+      <p>Les <span class="italic">Éditions des Lueurs Reliées</span> ouvrent leurs portes à toutes celles et ceux qui souhaitent contribuer à un projet unique, centré avant tout sur le partage d’écrits personnels.</p>
+      <a href="articles/join/join.html" class="btn">En savoir plus</a>
+    </div>
+  </section>
+
+  <script>
+    const grid = document.getElementById('grid');
+    const section = document.getElementById('mosaic-section');
+    const cellSize = 50;
+    const gap = 10;
+    let cells = [];
+    let greenMode = true;
+
+    function createGrid() {
+      grid.innerHTML = '';
+      cells = [];
+
+      const sectionWidth = section.clientWidth;
+      const sectionHeight = section.clientHeight;
+
+      const cols = Math.ceil((sectionWidth + gap) / (cellSize + gap));
+      const rows = Math.ceil((sectionHeight + gap) / (cellSize + gap));
+
+      const gridWidth = cols * cellSize + (cols - 1) * gap;
+      const gridHeight = rows * cellSize + (rows - 1) * gap;
+
+      grid.style.width = `${gridWidth}px`;
+      grid.style.height = `${gridHeight}px`;
+      grid.style.gridTemplateColumns = `repeat(${cols}, ${cellSize}px)`;
+      grid.style.gridTemplateRows = `repeat(${rows}, ${cellSize}px)`;
+
+      for (let i = 0; i < cols * rows; i++) {
+        const div = document.createElement('div');
+        div.classList.add('cell');
+        grid.appendChild(div);
+        cells.push(div);
+      }
+    }
+
+    function getRandomCell(condition) {
+      const filtered = cells.filter(condition);
+      return filtered.length ? filtered[Math.floor(Math.random() * filtered.length)] : null;
+    }
+
+    function animate() {
+      if (greenMode) {
+        const cell = getRandomCell(c => !c.classList.contains('green'));
+        if (cell) {
+          cell.classList.add('green');
+        } else {
+          greenMode = false;
+        }
+      } else {
+        const cell = getRandomCell(c => c.classList.contains('green'));
+        if (cell) {
+          cell.classList.remove('green');
+        } else {
+          greenMode = true;
+        }
+      }
+    }
+
+    function refreshGrid() {
+      clearInterval(intervalId);
+      createGrid();
+      intervalId = setInterval(animate, 1000);
+    }
+    createGrid();
+    let intervalId = setInterval(animate, 1000);
+
+
+    let lastWidth = window.innerWidth;
+    window.addEventListener('resize', () => {
+    const currentWidth = window.innerWidth;
+    if (currentWidth !== lastWidth) {
+      refreshGrid(); 
+      lastWidth = currentWidth;
+    }
+  });
+  </script>
+
+
+  <section id="pro">
+    <h3 class="reveal">Vous êtes journaliste ou critique littéraire ?</h3>
+    <p>
+      Retrouvez notre dossier de presse, les visuels officiels et les informations de contact dans la section Presse. Les <span class="italic">Éditions des Lueurs Reliées</span> mettent à votre disposition l’ensemble des ressources nécessaires pour relayer, programmer ou approfondir vos recherches sur nos publications et projets éditoriaux.</p>
+    <a href="articles/presse/presse.html" class="btn">Espace Presse</a>
+  </section>
+</main>
+
+
+
+
+<footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- Informations société -->
+    <div class="footer-section">
+      <h3 class="footer-title">Éditions des Lueurs Reliées</h3>
+      <p>
+        Maison d'Édition<br>
+        +33 6 74 41 36 37<br>
+        contact@lueurs-reliees.fr<br>
+        75019 Paris, France
+      </p>
+      <!--<p>SIRET : 123 456 789 00010</p>-->
     </div>
 
-    <div class="badge">
-      <img src="img/gael.png" alt="Photo de profil">
-      <a href="articles/contact/gael-maignan.html"><h3>Gaël Maignan</h3></a>
-      <h4>Responsable du pôle Communication</h4>
-      <p>Etudiant en Info-com à Paris Panthéon-Assas</p>
-      <a href="mailto:gael.maignan@lueurs-reliees.fr">gael.maignan@lueurs-reliees.fr</a>
+    <!-- Liens utiles -->
+    <div class="footer-section">
+      <h4 class="footer-subtitle">Liens utiles</h4>
+      <ul class="footer-links">
+        <li><a href="articles/about/about.html">À propos</a></li>
+        <li><a href="articles/catalogue/catalogue.html">Catalogue</a></li>
+        <li><a href="articles/policy/policy.html">Mentions légales</a></li>
+        <li><a href="articles/contact/contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Réseaux sociaux -->
+    <div class="footer-section">
+      <h4 class="footer-subtitle">Suivez-nous</h4>
+      <div class="social-links">
+        <a href="https://facebook.com">Facebook</a>
+        <a href="https://linkedin.com">LinkedIn</a>
+        <a href="https://instagram.com">Instagram</a>
+      </div>
     </div>
 
   </div>
 
-         <h2>Retrouvez-nous sur les réseaux sociaux !</h2>
-         <p>Pour ne rien rater de notre activité, suivez-nous sur les réseaux sociaux !</p>
-
-        <ul class="no-style">
-        <li><a href="https://linktr.ee/lueurs_reliees" target="_blank">linktr.ee/lueurs_reliees</a></li>
-        <li><a href="https://www.instagram.com/editions_lueurs_reliees/" target="_blank">instagram/editions_lueurs_reliees</a></li>
-        <li><a href="https://www.linkedin.com/company/editions-lueurs-reliees" target="_blank">linkedin/editions_lueurs_reliees</a></li>
-        </ul>
-
-        </div>
+  <div class="footer-bottom">
+    &copy; 2025 Éditions des Lueurs Reliées. Tous droits réservés.
+  </div>
+</footer>
 
 
 
 
-        
-
-<footer id="footer">
-            <div class="fixed-img"></div>
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Édition</h3>
-                    <ul>
-                        <li><a href="articles/nos publications/nos publications.html">Publications</a></li>
-                        <li><a href="articles/soumettre un manuscrit/soumettre un manuscrit.html">Soumettre un manuscrit</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Pédagogie</h3>
-                    <ul>
-                        <li><a href="articles/rejoignez les éditions des lueurs reliées/rejoignez les éditions des lueurs reliées.html">Nous rejoindre</a></li>
-                        <li><a href="articles/collaboration avec le corps enseignant/collaboration avec le corps enseignant.html">Espace Enseignant</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Liens</h3>
-                    <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="">À propos</a></li>
-                        <li><a href="articles/nos publications/nos publications.html">Publications</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <ul>
-                        <li><a href="mailto:contact@lueurs-reliees.fr">contact@lueurs-reliees.fr</a></li>
-                        <li><a href="mailto:jeanne.lefevre@lueurs-reliees.fr">jeanne.lefevre@lueurs-reliees.fr</a></li>
-                        <li><a href="mailto:lucie.terrette@lueurs-reliees.fr">lucie.terrette@lueurs-reliees.fr</a></li>
-                    </ul>
-                </div>
-                <div id="about" class="footer-bottom">
-                    <div class="text-container">
-                        <h2 class="banner-title">Éditions des Lueurs Reliées</h2>
-                        <p>En 2025, Publions en faveur de la liberté d'expression !</p>
-                    </div>
-                    <p>
-                        &copy; 2025 Lueurs Reliées. Tous droits réservés.
-                    </p>
-                </div>
-            </div>
-        </footer>
-
-    </main>     
 </body>
 </html>
