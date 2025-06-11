@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
       main.style.marginTop = navbarHeight + 'px';
     }
 
+    adjustMainPadding();
+
     window.addEventListener('load', () => {
       adjustMainPadding();
       // S'assurer que la navbar est visible au chargement

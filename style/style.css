@@ -234,7 +234,7 @@ section h4 {
 }
 @media (max-width: 768px) {
 .film-info {
-  padding: 0;
+  padding: 1rem;
   margin-bottom: 0;
 }
 }
