@@ -232,6 +232,9 @@ section h4 {
     margin-bottom: 2rem;
     padding-right: 1rem;
 }
+.no-img {
+  padding-left: 1rem
+}
 @media (max-width: 768px) {
 .film-info {
   padding: 1rem;
