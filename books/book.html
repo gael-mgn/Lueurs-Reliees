@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Titre du livre — Éditions Lumen</title>
+  <meta name="description" content="Fiche livre — résumé, extrait, infos techniques, auteur et points de vente." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../js/script.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Titre du livre",
+    "author": {"@type":"Person","name":"Nom de l'auteur"},
+    "image": "https://www.editions-lumen.example/images/couvertures/titre.jpg",
+    "datePublished": "2025-08-01",
+    "isbn": "978-2-00-000000-0",
+    "publisher": {"@type":"Organization","name":"Éditions Lumen","url":"https://www.editions-lumen.example"}
+  }
+  </script>
+</head>
+<body class="bg-gray-50 text-slate-800">
+  <!-- Header -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#7c3aed"/><path d="M7 8h10v8H7z" fill="white" opacity="0.9"/></svg>
+        <div>
+          <div class="text-lg font-semibold">Éditions Lumen</div>
+          <div class="text-xs text-slate-500">Catalogue</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="catalogue.html">Catalogue</a>
+        <a href="auteurs.html">Auteurs</a>
+        <a href="soumissions.html">Soumettre</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main book hero -->
+  <main class="max-w-7xl mx-auto px-6 py-12">
+    <div class="grid md:grid-cols-3 gap-8 items-start">
+      <div class="md:col-span-1">
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Couverture — Titre du livre" class="cover shadow-lg">
+        <div class="mt-4 flex gap-3">
+          <a href="#achats" class="flex-1 inline-block bg-indigo-600 text-white px-4 py-2 rounded-md text-center">Acheter</a>
+          <a href="#extrait" class="flex-1 inline-block border border-indigo-600 text-indigo-600 px-4 py-2 rounded-md text-center">Lire un extrait</a>
+        </div>
+        <div class="mt-4 text-sm text-slate-600 space-y-1">
+          <div><strong>Éditeur :</strong> Éditions Lumen</div>
+          <div><strong>Parution :</strong> août 2025</div>
+          <div><strong>Format :</strong> 14 x 21 cm — 320 pages</div>
+          <div><strong>ISBN :</strong> 978-2-00-000000-0</div>
+          <div><strong>Prix :</strong> 20€</div>
+        </div>
+      </div>
+
+      <div class="md:col-span-2">
+        <h1 class="text-3xl font-bold">Titre du livre</h1>
+        <p class="mt-2 text-sm text-slate-500">par <a href="auteurs/nom-de-lauteur.html" class="text-indigo-600">Nom de l'auteur</a></p>
+
+        <section id="synopsis" class="mt-6 bg-white p-6 rounded-lg shadow">
+          <h2 class="text-xl font-semibold">Synopsis</h2>
+          <p class="mt-3 text-slate-700">Résumé du livre — une description engageante et concise qui présente le propos, le ton et le lectorat visé. Deux ou trois paragraphes suffisent pour donner envie.</p>
+        </section>
+
+        <section id="extrait" class="mt-6 bg-white p-6 rounded-lg shadow">
+          <h2 class="text-xl font-semibold">Extrait</h2>
+          <article class="mt-3 text-slate-700 prose max-w-none">
+            <p>Premier extrait du livre — quelques paragraphes pour donner le ton. (Extrait protégé par le droit d'auteur.)</p>
+            <p class="mt-3"><a href="#" class="text-indigo-600">Télécharger l'extrait (PDF)</a></p>
+          </article>
+        </section>
+
+        <section id="avis" class="mt-6">
+          <h2 class="text-xl font-semibold">Presse & avis</h2>
+          <div class="mt-3 grid sm:grid-cols-2 gap-4">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <p class="text-sm text-slate-600">« Un roman qui résonne longtemps après la lecture. » — <em>Le Magazine Littéraire</em></p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+              <p class="text-sm text-slate-600">« Une plume d'une précision remarquable. » — <em>La Revue</em></p>
+            </div>
+          </div>
+        </section>
+
+        <section id="achats" class="mt-6 bg-white p-6 rounded-lg shadow">
+          <h2 class="text-xl font-semibold">Où acheter</h2>
+          <div class="mt-3 grid sm:grid-cols-2 gap-3">
+            <a href="#" class="block p-3 border rounded hover:bg-gray-50">Boutique Lumen — 20€</a>
+            <a href="#" class="block p-3 border rounded hover:bg-gray-50">Fnac</a>
+            <a href="#" class="block p-3 border rounded hover:bg-gray-50">Amazon</a>
+            <a href="#" class="block p-3 border rounded hover:bg-gray-50">Librairies indépendantes</a>
+          </div>
+          <p class="mt-3 text-sm text-slate-600">Pour les libraires et les demandes professionnelles, contactez <a href="mailto:libraires@editions-lumen.example" class="text-indigo-600">libraires@editions-lumen.example</a>.</p>
+        </section>
+
+        <section id="more" class="mt-6 grid sm:grid-cols-2 gap-4">
+          <div class="bg-white p-4 rounded-lg shadow">
+            <h3 class="font-semibold">À propos de l'auteur</h3>
+            <p class="mt-2 text-sm text-slate-600">Brève bio et liens vers la page auteur et interviews.</p>
+            <a href="auteurs/nom-de-lauteur.html" class="mt-2 inline-block text-indigo-600">Voir la page auteur →</a>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <h3 class="font-semibold">Livres similaires</h3>
+            <ul class="mt-2 text-sm text-slate-600 space-y-2">
+              <li><a href="#" class="text-indigo-600">Titre connexe 1</a></li>
+              <li><a href="#" class="text-indigo-600">Titre connexe 2</a></li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-12">
+    <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row md:justify-between gap-6">
+      <div>
+        <strong>Éditions Lumen</strong>
+        <div class="text-sm text-slate-500 mt-2">© 1998–2025 — Tous droits réservés</div>
+      </div>
+      <nav class="flex gap-4 text-sm text-slate-600">
+        <a href="catalogue.html">Catalogue</a>
+        <a href="auteurs.html">Auteurs</a>
+        <a href="soumissions.html">Soumettre un manuscrit</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,45 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-
-// Menu
-  const navbar = document.getElementById('navbar');
-    const main = document.getElementById('hero');
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('navLinks');
-    let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    const scrollUpTolerance = 15;
-    const hideThreshold = 300;
-
-    function adjustMainPadding() {
-      const navbarHeight = navbar.offsetHeight;
-      main.style.marginTop = navbarHeight + 'px';
-    }
-
-    adjustMainPadding();
-
-    window.addEventListener('load', () => {
-      adjustMainPadding();
-      // S'assurer que la navbar est visible au chargement
-      navbar.classList.remove('hidden');
+    // small interactivity: mobile menu
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
     });
 
-    window.addEventListener('resize', adjustMainPadding);
-
-    window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (currentScroll > lastScrollTop && currentScroll > hideThreshold) {
-      navbar.classList.add('hidden');
-      // fermer le menu
-       navLinks.classList.remove('active'); // Ajoute cette ligne
-    } else if (lastScrollTop - currentScroll > scrollUpTolerance) {
-      navbar.classList.remove('hidden');
-    }
-
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    // fallback: accessible focus styles for keyboard users
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Tab') document.documentElement.classList.add('user-is-tabbing');
     });
-
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-
   });

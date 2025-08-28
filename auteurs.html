@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nos auteurs — Éditions des Lueurs Reliées</title>
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="auteurs, auteures, autrices, poète, lueurs reliées">
+  <meta name="description" content="Découvrez les auteurs publiés par les Éditions des Lueurs Reliées." />
+
+  <link rel="icon" href="img/favicon-48.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="bg-gray-50 text-slate-800">
+  <!-- HEADER (simplifié avec retour accueil) -->
+  <header class=" shadow-sm sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="img/favicon-48.ico" alt="Icône" width="40" height="40" />
+        <div class="hidden md:block">
+          <div class="text-lg font-semibold">Éditions des Lueurs Reliées</div>
+          <div class="text-xs subtitle">Poésies — Romans — Projets Éditoriaux</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="index.html#nouveautes" class="hover:underline">Nouveautés</a>
+        <a href="catalogue.html" class="hover:underline">Catalogue</a>
+        <a href="#" class="hover:underline">Auteurs</a>
+        <a href="submit.html" class="hover:underline">Soumettre un manuscrit</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button id="btn-search" aria-label="Recherche" class="p-2 rounded-md no-mobile">
+          <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="loop">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-3xl">☰</button>
+      </div>
+    </div>
+
+    <!-- mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden border-t">
+      <div class="px-6 py-4 flex flex-col gap-3">
+        <a href="#catalogue">Catalogue</a>
+        <a href="#auteurs">Auteurs</a>
+        <a href="#soumissions">Soumettre un manuscrit</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- HERO / INTRO -->
+<section id="hero" class="relative bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-16 bg-cover bg-center" style="background-image: url('img/logo.png'); color: #F2E8D7;">
+    <!-- Overlay -->
+    <div class="absolute inset-0 hero-overlay"></div>
+
+    <div class="relative max-w-4xl mx-auto px-6 text-center">
+        <h1 class="text-3xl md:text-5xl font-extrabold">Nos auteurs</h1>
+        <p class="mt-4 text-lg">Plongez dans l'univers des plumes qui font vibrer notre maison d'édition.</p>
+    </div>
+</section>
+
+  <style>
+    .auteur-card {
+      background-color: #EFDFC4;
+    }
+  </style>
+
+  <!-- LISTE AUTEURS -->
+  <main>
+    <section class="max-w-7xl mx-auto px-6 py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <article class="rounded-xl shadow p-4 flex flex-col items-center text-center auteur-card">
+        <img src="img/user.png" alt="Portrait de Mikaëlla Génin" class="w-32 h-32 rounded-full object-cover shadow">
+        <h2 class="mt-4 text-lg font-semibold">Mikaëlla Génin</h2>
+        <p class="text-sm text-slate-500">Auteure de <em>Quand la femme écrit la femme</em></p>
+        <p class="mt-3 text-sm text-slate-600"></p>
+        <a href="mailto:mikaella.genin@lueurs-reliees.fr" class=" inline-block text-sm font-medium lien">mikaella.genin@lueurs-reliees.fr</a>
+        <a href="auteurs/mikaella-genin.html" class="mt-4 inline-block text-brand px-5 py-3 font-medium btn">À propos</a>
+      </article>
+
+      <!-- Carte auteur -->
+      <article class="rounded-xl shadow p-4 flex flex-col items-center text-center auteur-card">
+        <img src="auteurs/lou-grimaud.jpg" alt="Portrait de Lou Grimaud" class="w-32 h-32 rounded-full object-cover shadow">
+        <h2 class="mt-4 text-lg font-semibold">Lou Grimaud</h2>
+        <p class="text-sm text-slate-500">Plume de la Résidence d'Août 2025</p>
+        <p class="mt-3 text-sm text-slate-600"></p>
+        <a href="mailto:lou.grimaud@lueurs-reliees.fr" class=" inline-block text-sm font-medium lien">lou.grimaud@lueurs-reliees.fr</a>
+        <a href="auteurs/lou-grimaud.html" class="mt-4 inline-block text-brand px-5 py-3 font-medium btn">À propos</a>
+      </article>
+
+      <article class="rounded-xl shadow p-4 flex flex-col items-center text-center auteur-card">
+        <img src="img/user.png" alt="Portrait de Solenne Chenorkian" class="w-32 h-32 rounded-full object-cover shadow">
+        <h2 class="mt-4 text-lg font-semibold">Solenne Chenorkian</h2>
+        <p class="text-sm text-slate-500">Auteure de <em>Une chose que je voulais vous dire</em></p>
+        <p class="mt-3 text-sm text-slate-600"></p>
+        <a href="mailto:solenne.chenorkian@lueurs-reliees.fr" class=" inline-block text-sm font-medium lien">solenne.chenorkian@lueurs-reliees.fr</a>
+        <a href="auteurs/solenne-chenorkian.html" class="mt-4 inline-block text-brand px-5 py-3 font-medium btn">À propos</a>
+      </article>
+
+      <article class="rounded-xl shadow p-4 flex flex-col items-center text-center auteur-card">
+        <img src="img/user.png" alt="Portrait anonyme" class="w-32 h-32 rounded-full object-cover shadow">
+        <h2 class="mt-4 text-lg font-semibold">Auteur Anonyme - <em>Migrassion</em></h2>
+        <p class="text-sm text-slate-500">Auteur de <em>Migrassion</em></p>
+        <p class="mt-3 text-sm text-slate-600"></p>
+        <a href="mailto:migrassion@lueurs-reliees.fr" class=" inline-block text-sm font-medium lien">migrassion@lueurs-reliees.fr</a>
+        <a href="auteurs/auteur-migrassion.html" class="mt-4 inline-block text-brand px-5 py-3 font-medium btn">À propos</a>
+      </article>
+    </div>
+  </section>
+  </main>
+
+    <!-- Footer -->
+    <footer class="border-t">
+      <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row md:justify-between gap-6">
+        <div>
+          <strong id="footer-title">Éditions des Lueurs Reliées</strong>
+          <div class="text-sm mt-2">© 2025–<span id="year"> — Tous droits réservés</div>
+          <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+        </div>
+        <nav class="flex gap-4 text-sm">
+          <a href="policy.html">Mentions légales</a>
+          <a href="#cgv">CGV</a>
+          <a href="press.html">Presse</a>
+        </nav>
+      </div>
+    </footer>
+</body>
+</html>

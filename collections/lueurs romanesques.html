@@ -1,138 +1,146 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Éditions des Lueurs Reliées — Lueurs Romanesques</title>
-
-  <meta name="author" content="Gaël Maignan">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lueurs Romanesques — Éditions des Lueurs Reliées</title>
   <meta name="robots" content="index, follow">
   <meta name="keywords" content="Lueurs Reliées, Roman, Collection, Livre, lueurs Romanesques">
-  <meta name="description" content="Lueurs Poétiques est l’espace dédié à la poésie au sein des Éditions des Lueurs Reliées. Cette collection accueille des voix qui explorent le monde par la force du langage. Intimes ou collectives, sociales ou politiques, expérimentales ou lyriques, les œuvres publiées interrogent notre époque, nos sensibilités et nos engagements.">
+  <meta name="description" content="Lueurs Romanesques accueille des voix qui explorent le monde par la force du langage. Intimes ou collectives, sociales ou politiques, expérimentales ou lyriques, les œuvres publiées interrogent notre époque, nos sensibilités et nos engagements.">
 
-  <link rel="stylesheet" href="../style/style.css">
-  <link rel="stylesheet" href="../style/mosaic.css">
 
   <link rel="icon" href="../img/favicon-48.ico">
 
-  <script type="text/javascript" src="../js/reveal.js"></script>
-  <script type="text/javascript" src="../js/script.js"></script>
-  <script src="../js/delaunator.min.js"></script>
-  <script type="text/javascript" src="../js/triangles.js"></script>
-
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
-  <script type="module" src="https://gael-mgn.github.io/js/log.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../js/script.js"></script>
+  <link rel="stylesheet" href="../style/style.css">
 </head>
-<body>
-  <header>
-    <div class="navbar" id="navbar">
-    <a href="../index.html" class="title"><h1>Éditions des Lueurs Reliées</h1></a>
-    <div class="hamburger" id="hamburger">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <nav class="nav-links" id="navLinks">
-      <a href="../index.html">Accueil</a>
-      <a href="../about.html">À propos</a>
-      <a href="../catalogue.html">Catalogue</a>
-      <a href="../contact.html">Contact</a>
-    </nav>
-    </div>
+<body class="bg-gray-50 text-slate-800">
+  <!-- HEADER (simplifié avec retour accueil) -->
+  <header class=" shadow-sm sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-3">
+        <img src="../img/favicon-48.ico" alt="Icône" width="40" height="40" />
+        <div class="hidden md:block">
+          <div class="text-lg font-semibold">Éditions des Lueurs Reliées</div>
+          <div class="text-xs subtitle">Poésies — Romans — Projets Éditoriaux</div>
+        </div>
+      </a>
 
-    <style>#hero {background-color: #BC3A41;}</style>
-    <div class="container" data-color="#BC3A41" border-color="#F2E8D7" id="hero">
-    <svg class="triangle-background" xmlns="http://www.w3.org/2000/svg"></svg>
-    <div class="content">
-      <br>
-    </div>
-  </div>
-  </header>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="../index.html#nouveautes" class="hover:underline">Nouveautés</a>
+        <a href="../catalogue.html" class="hover:underline">Catalogue</a>
+        <a href="../auteurs.html" class="hover:underline">Auteurs</a>
+        <a href="../submit.html" class="hover:underline">Soumettre un manuscrit</a>
+        <a href="../contact.html" class="hover:underline">Contact</a>
+      </nav>
 
-  <main>
-  <section id="apropos">
-    <h2 class="reveal">Lueurs Romanesques</h2>
-
-    <p class="highlight">Collection de romans et nouvelles</p>
-    
-    <p><span class="italic">Lueurs Romanesques</span> est la collection consacrée aux récits de fiction des <span class="italic">Éditions des Lueurs Reliées</span>.</p>
-
-    <p>Ici, le roman et la nouvelle deviennent des espaces de narration où s'entrelacent les histoires individuelles et les questions collectives. Nos publications cherchent à capter les nuances du monde contemporain : identités plurielles, engagements sociétaux, mémoires intimes, enjeux politiques et sociaux, ou encore récits de transformation personnelle.</p>
-    <p>Nous privilégions les voix singulières, les perspectives marginales, les écritures audacieuses qui questionnent le réel, sans céder à l’effet de mode ni à la complaisance. Qu’il s’agisse de romans engagés, de récits introspectifs ou de nouvelles explorant les complexités humaines, chaque texte doit porter une vision forte et sensible du monde.</p>
-    <p>Conformément à l’engagement associatif de la maison, chaque livre publié au sein de Lueurs Romanesques est adossé à un partenariat avec une association dont les actions résonnent avec les thèmes abordés dans l’œuvre. Le livre devient ainsi un lieu de convergence entre la fiction et l’action concrète.</p>
-
-
-    <h3>À la Une</h3>
-
-
-    <h3>Parcourir les autres collections</h3>
-    <ul>
-      <li><a href="lueurs poétiques.html">Lueurs Poétiques</a></li>
-      <li><a href="lueurs singulières.html">Lueurs Singulières</a></li>
-    </ul>
-
-  </section>
-
-  <style type="text/css">
-    #container2{
-      background-color: #994129;
-    }
-  </style>
-
-  <div class="container" id="container2" data-color="#994129" border-color="#F2E8D7">
-    <svg class="triangle-background" xmlns="http://www.w3.org/2000/svg"></svg>
-    <div class="overlay"></div> <!-- Filtre sombre -->
-    <div class="content">
-      <h2>Rejoignez les Éditions des <span class="italic">Lueurs Reliées</span> : Participez à un projet littéraire engagé !</h2>
-      <p>Les Éditions des Lueurs Reliées ouvrent leurs portes à toutes celles et ceux qui souhaitent contribuer à un projet unique, centré avant tout sur le partage d’écrits personnels.</p>
-    <a href="../join.html" class="btn">En savoir plus</a>
-    </div>
-  </div>
-</main>
-
-<footer class="site-footer">
-  <div class="footer-container">
-    
-    <!-- Informations société -->
-    <div class="footer-section">
-      <h3 class="footer-title">Éditions des Lueurs Reliées</h3>
-      <p>
-        Maison d'Édition Engagée<br>
-        +33 6 74 41 36 37<br>
-        contact@lueurs-reliees.fr<br>
-        75019 Paris, France
-      </p>
-      <!--<p>SIRET : 123 456 789 00010</p>-->
-    </div>
-
-    <!-- Liens utiles -->
-    <div class="footer-section">
-      <h4 class="footer-subtitle">Liens utiles</h4>
-      <ul class="footer-links">
-        <li><a href="../about.html">À propos</a></li>
-        <li><a href="../catalogue.html">Catalogue</a></li>
-        <li><a href="../policy.html">Mentions légales</a></li>
-        <li><a href="../contact.html">Contact</a></li>
-      </ul>
-    </div>
-
-    <!-- Réseaux sociaux -->
-    <div class="footer-section">
-      <h4 class="footer-subtitle">Suivez-nous</h4>
-      <div class="social-links">
-        <a href="https://facebook.com">Facebook</a>
-        <a href="https://linkedin.com">LinkedIn</a>
-        <a href="https://instagram.com">Instagram</a>
+      <div class="flex items-center gap-3">
+        <button id="btn-search" aria-label="Recherche" class="p-2 rounded-md no-mobile">
+          <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="loop">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-3xl">☰</button>
       </div>
     </div>
 
-  </div>
+    <!-- mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden border-t">
+      <div class="px-6 py-4 flex flex-col gap-3">
+        <a href="../catalogue.html">Catalogue</a>
+        <a href="../auteurs.html">Auteurs</a>
+        <a href="../submit.html">Soumettre un manuscrit</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
 
-  <div class="footer-bottom">
-    &copy; 2025 Éditions des Lueurs Reliées. Tous droits réservés.
-  </div>
-</footer>
+
+
+  <!-- HERO / INTRO -->
+<section id="hero" class="relative bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-16 bg-cover bg-center" style="background-image: url('../img/logo.png'); color: #F2E8D7;">
+    <!-- Overlay -->
+    <div class="absolute inset-0 hero-overlay"></div>
+
+    <div class="relative max-w-4xl mx-auto px-6 text-center">
+        <h1 class="text-3xl md:text-5xl font-extrabold">Lueurs Romanesques</h1>
+        <p class="mt-4 text-lg">Collection de romans et nouvelles</p>
+    </div>
+</section>
+
+  <style>
+    .auteur-card {
+      background-color: #EFDFC4;
+    }
+  </style>
+
+  <!-- LISTE AUTEURS -->
+  <main>
+    <section class="max-w-7xl mx-auto px-6 py-12">
+    
+
+<style>
+  .list {
+  list-style-type: circle; /* disc | circle | square | none */
+  padding-left: 1.5rem; /* Ajoute un peu d’espace */
+  color: #333;
+}
+
+.list li {
+  font-size: 16px;
+}
+p {
+  margin-bottom: 0.75em;
+}
+.section {
+  background-color: #EFDFC4;
+}
+</style>
+
+
+<div class="p-6 rounded-lg shadow-lg section mb-4"> <!-- Réduction du padding interne -->
+      <h2 class="text-2xl font-semibold mb-6">À propos des Lueurs Romanesques</h2>
+      <p>Ici, le roman et la nouvelle deviennent des espaces de narration où s'entrelacent les histoires individuelles et les questions collectives. Nos publications cherchent à capter les nuances du monde contemporain : identités plurielles, engagements sociétaux, mémoires intimes, enjeux politiques et sociaux, ou encore récits de transformation personnelle.</p>
+      <p>Nous privilégions les voix singulières, les perspectives marginales, les écritures audacieuses qui questionnent le réel, sans céder à l’effet de mode ni à la complaisance. Qu’il s’agisse de romans engagés, de récits introspectifs ou de nouvelles explorant les complexités humaines, chaque texte doit porter une vision forte et sensible du monde.</p>
+      <p>Conformément à l’engagement associatif de la maison, chaque livre publié au sein de Lueurs Romanesques est adossé à un partenariat avec une association dont les actions résonnent avec les thèmes abordés dans l’œuvre. Le livre devient ainsi un lieu de convergence entre la fiction et l’action concrète.</p>
+
+</div>
+
+<div class="p-6 rounded-lg shadow-lg section mt-6 mb-6"> 
+      <h2 class="text-2xl font-semibold mb-4">Parcourir les autres collections</h2>
+
+
+    <ul>
+      <li><a href="lueurs poétiques.html" class="lien">Lueurs Poétiques</a></li>
+      <li><a href="lueurs singulières.html" class="lien">Lueurs Singulières</a></li>
+    </ul>
+    </div>
+
+
+
+    </section>
+  </main>
+
+    <!-- Footer -->
+    <footer class="border-t">
+      <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row md:justify-between gap-6">
+        <div>
+          <strong id="footer-title">Éditions des Lueurs Reliées</strong>
+          <div class="text-sm mt-2">© 2025–<span id="year"> — Tous droits réservés</div>
+          <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+        </div>
+        <nav class="flex gap-4 text-sm">
+          <a href="policy.html">Mentions légales</a>
+          <a href="#cgv">CGV</a>
+          <a href="press.html">Presse</a>
+        </nav>
+      </div>
+    </footer>
 </body>
 </html>
